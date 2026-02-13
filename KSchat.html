@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Me - Krishnendu Sarkar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Krishnendu Sarkar</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#education">Education</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="chatbot.html" class="active">Chat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chatbot Section -->
+    <section class="chatbot-section">
+        <div class="container">
+            <div class="chatbot-container">
+                <div class="chatbot-header">
+                    <h2>Chat with Me</h2>
+                    <p>Ask me anything about my work, skills, or projects!</p>
+                </div>
+
+                <div class="chat-window">
+                    <div class="messages" id="messages">
+                        <div class="message bot-message">
+                            <div class="message-content">
+                                Hi! 👋 I'm Krishnendu's chatbot. Feel free to ask me anything about his skills, projects, education, or availability. What would you like to know?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        class="chat-input" 
+                        placeholder="Type your message here..."
+                        autocomplete="off"
+                    >
+                    <button class="send-button" onclick="sendMessage()">Send</button>
+                </div>
+
+                <div class="quick-questions">
+                    <p>Quick questions:</p>
+                    <div class="quick-buttons">
+                        <button onclick="askQuestion('What are your main skills?')">Skills</button>
+                        <button onclick="askQuestion('Tell me about your projects')">Projects</button>
+                        <button onclick="askQuestion('How can I contact you?')">Contact Info</button>
+                        <button onclick="askQuestion('What is your educational background?')">Education</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Krishnendu Sarkar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
